@@ -2,45 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Локальный тренажёр ПДД Республики Беларусь: билеты, экзамен и разбор ошибок.">
-  <title>ПДД · Учебный тренажёр</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23097762'/%3E%3Cpath d='M10 24V8h8a5 5 0 0 1 0 10h-8m0-6h8' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#087765">
+  <meta name="description" content="Выберите тренажёр ПДД Беларуси: АДРАЙВ или Новый поворот. Билеты, экзамен и справочник.">
+  <title>ПДД · Выбор программы</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="data/questions.js"></script>
-  <script defer src="data/reference.js"></script>
-  <script defer src="core.js"></script>
-  <script defer src="app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#content">Перейти к содержимому</a>
-  <div class="layout">
-    <aside class="sidebar">
-      <a class="brand" href="#" aria-label="ПДД, главное меню"><span class="brand-mark">П</span><span>ПДД<span class="brand-sub">Учебный тренажёр</span></span></a>
-      <nav aria-label="Режимы программы">
-        <button class="nav-button active" data-page="practice"><span class="nav-icon">◎</span>Тренировка</button>
-        <button class="nav-button" data-page="exam"><span class="nav-icon">◷</span>Экзамен</button>
-        <button class="nav-button" data-page="book"><span class="nav-icon">▤</span>Справочник</button>
-      </nav>
-      <div class="sidebar-footer"><span class="edition">Республика Беларусь</span><p>База учебной программы</p></div>
-    </aside>
-    <div class="workspace">
-      <header class="topbar">
-        <span class="topbar-title">Подготовка к вождению</span>
-        <label class="category-control">Категория <select id="category"><option value="B">B</option><option value="BC">B + C</option></select></label>
-      </header>
-      <main id="content" tabindex="-1"><div class="loading">Загрузка билетов…</div></main>
-      <footer class="app-footer"><span>Материалы ПДД.by</span><span>Результаты хранятся в этом браузере</span></footer>
+  <header><a class="brand" href="./"><span class="brand-mark">↗</span>Практика ПДД</a><span class="region">Беларусь</span></header>
+  <main>
+    <div class="intro"><p class="eyebrow">Готовимся к дороге</p><h1>Что хотите открыть?</h1><p>Выберите программу для подготовки.</p></div>
+    <div class="programs">
+      <a class="program adrive" href="adrive/" aria-label="Открыть АДРАЙВ">
+        <div class="card-top"><span class="program-icon" aria-hidden="true">А</span><span class="category">Категория B</span></div>
+        <h2>АДРАЙВ</h2><p>Комплексные и тематические билеты, экзамен и учебный справочник.</p><span class="open">Открыть программу <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="program povorot" href="novyi-povorot/" aria-label="Открыть НОВЫЙ ПОВОРОТ">
+        <div class="card-top"><span class="program-icon" aria-hidden="true">П</span><span class="category">B и B + C</span></div>
+        <h2>НОВЫЙ ПОВОРОТ</h2><p>Тренировки по разделам и темам, проверка знаний и разбор ошибок.</p><span class="open">Открыть программу <span aria-hidden="true">↗</span></span>
+      </a>
     </div>
-  </div>
-  <dialog id="reference-dialog" aria-labelledby="dialog-title">
-    <div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="dialog-close" aria-label="Закрыть">×</button></div>
-    <div id="dialog-body" class="reference-body"></div>
-  </dialog>
-  <dialog id="leave-dialog" aria-labelledby="leave-title">
-    <h2 id="leave-title">Вернуться в меню?</h2><p>Можно продолжить этот билет позже.</p>
-    <div class="dialog-actions"><button class="button secondary" id="leave-cancel">Продолжить решение</button><button class="button" id="leave-confirm">В меню</button></div>
-  </dialog>
-  <noscript><p>Для решения билетов включите JavaScript в браузере.</p></noscript>
+    <p class="progress-note"><span aria-hidden="true">◉</span> Прогресс каждой программы сохраняется отдельно в вашем браузере.</p>
+  </main>
+  <footer><p>База вопросов и изображений предоставлена частным предприятием «Аркитек Мультима». <a href="https://adrive.by/" target="_blank" rel="noopener noreferrer">Сайт правообладателя АДРАЙВ</a></p><p>Материалы «Нового поворота»: ПДД.by.</p></footer>
 </body>
 </html>
