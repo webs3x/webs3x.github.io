@@ -1,15 +1,18 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-site-locked>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#087765">
   <title>АДРАЙВ · ПДД</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="data/questions.js" defer></script>
-  <script src="data/reference.js" defer></script>
-  <script src="core.js" defer></script>
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="../access.css">
+  <script src="../access-config.js"></script>
+  <script src="../access.js"></script>
+  <script type="text/plain" data-site-src="data/questions.js"></script>
+  <script type="text/plain" data-site-src="data/reference.js"></script>
+  <script type="text/plain" data-site-src="core.js"></script>
+  <script type="text/plain" data-site-src="app.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Перейти к содержимому</a>
@@ -18,5 +21,6 @@
   <main id="main" tabindex="-1"><p>Загрузка базы вопросов…</p></main>
   <footer><p>База вопросов и изображений предоставлена частным предприятием «Аркитек Мультима». <a href="https://adrive.by/" target="_blank" rel="noopener noreferrer">Сайт правообладателя</a></p><p>Прогресс хранится в этом браузере.</p></footer>
   <dialog id="modal"><div class="dialog-top"><h2 id="modal-title"></h2><button class="close" aria-label="Закрыть">×</button></div><div id="modal-body"></div></dialog>
+  <noscript><p class="site-access-noscript">Для входа на сайт включите JavaScript в браузере.</p></noscript>
 </body>
 </html>

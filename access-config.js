@@ -1,0 +1,1 @@
+window.PddAccessConfig={"schema":1,"iterations":210000,"salt":"6e227a6d82f5661adbe4eed0074df729","verifier":"3b9170fe425c05aace74313ad3d60d59192b12e1c33b4c9d57db5618004b6302","revision":"94999447d579eef609aef634d7e3ef7f"};
